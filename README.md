@@ -9,7 +9,7 @@
 ## Project Overview
 
 **Brief Description**
-A four-page Power BI dashboard analysing a trucking company's deliveries, fleet, costs, and safety, built from a multi-table dataset of about 550,000 records (capstone project).
+A four-page Power BI dashboard analysing a trucking company's deliveries, fleet, costs, and safety, built from a multi-table dataset of about 550,000 records.
 
 **Tools & Skills Used**
 Power BI, Power Query, DAX, Data Modelling, Data Cleaning, KPI Design, Data Validation, Data Storytelling.
