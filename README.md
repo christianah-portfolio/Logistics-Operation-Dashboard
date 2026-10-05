@@ -106,33 +106,52 @@ Each load has two delivery events (a pickup and a delivery).
 ## Approach
 
 1. **Explored** the 14 tables and used the data dictionary to understand each column.
-2. **Cleaned and transformed** the data in Power Query. `[EDIT: list the cleaning steps you actually performed]`
+2. **Cleaned and transformed** the data in Power Query:
+   - Trimmed extra spaces and removed non-printing characters from text columns
+   - Changed data types (for example dates, numbers, and text)
+   - Replaced shortened state codes with full state names, so charts and filters are easier to read
+   - Created a custom column for the month, to analyse trends over time
 3. **Built a data model** by linking the tables with relationships (for example loads to routes, loads to trips, trips to drivers and trucks).
 4. **Wrote DAX measures** for the main KPIs.
 5. **Designed four dashboard pages** with slicers so users can filter by customer, location, and other fields.
 6. **Validated** every dashboard total against the source tables before finishing.
 
-### Example DAX measures
+### Key DAX measures
 
-`[EDIT: replace these with your exact measures]`
+I wrote about 25 measures. These are the main ones:
 
 ```DAX
+-- Revenue and volume
 Total Revenue = SUM(loads[revenue])
+Total Loads   = DISTINCTCOUNT(loads[load_id])
+Total Trips   = DISTINCTCOUNT(trips[trip_id])
+Total Miles   = SUM(trips[actual_distance_miles])
 
-Total Fuel Cost = SUM(fuel_purchases[total_cost])
+-- Costs
+Total Fuel Cost        = SUM(fuel_purchases[total_cost])
+Fuel Cost Per Mile     = DIVIDE([Total Fuel Cost], [Total Miles])
+Total Maintenance Cost = SUM(maintenance_records[total_cost])
+Total Claims           = SUM(safety_incidents[claim_amount])
 
-Total Miles = SUM(trips[actual_distance_miles])
+-- Deliveries (delivery events only, pickups excluded)
+Total Deliveries = CALCULATE(COUNTROWS(delivery_events),
+    delivery_events[event_type] = "Delivery")
 
-Fuel Cost Per Mile = DIVIDE([Total Fuel Cost], [Total Miles])
+On-Time Deliveries = CALCULATE(COUNTROWS(delivery_events),
+    delivery_events[event_type] = "Delivery",
+    delivery_events[on_time_flag] = TRUE())
 
-On-Time Delivery % =
-DIVIDE(
-    CALCULATE(COUNTROWS(delivery_events),
-        delivery_events[event_type] = "Delivery",
-        delivery_events[on_time_flag] = TRUE()),
-    CALCULATE(COUNTROWS(delivery_events),
-        delivery_events[event_type] = "Delivery")
-)
+On-Time Delivery % = DIVIDE([On-Time Deliveries], [Total Deliveries])
+
+-- Safety
+Safety Incidents = COUNTROWS(safety_incidents)
+Injury Incidents = CALCULATE(COUNTROWS(safety_incidents),
+    safety_incidents[injury_flag] = TRUE())
+
+-- Fleet
+Total Trucks = DISTINCTCOUNT(trucks[truck_id])
+Total Drivers = DISTINCTCOUNT(drivers[driver_id])
+Average MPG = AVERAGE(driver_monthly_metrics[average_mpg])
 ```
 
 ---
@@ -159,14 +178,6 @@ Checking the dashboards against the source data caught several problems:
 
 ---
 
-## Next Steps
-
-- Add a route-level view of fuel cost against revenue, to spot routes that may not cover their costs.
-- Add on-time rate by route and by driver, to show clearly that lateness is spread evenly.
-- Query the same data with SQL to answer the business questions outside Power BI.
-
----
-
 ## Project Files
 
 ```
@@ -183,14 +194,4 @@ logistics-operations-dashboard/
     └── data_dictionary.md
 ```
 
----
-
-## About Me
-
-**Christianah Adesua**: aspiring Data Analyst with training in Excel, SQL, Power BI, and AI-assisted analysis.
-
-- LinkedIn: [linkedin.com/in/christianah-adesua-baa6a734a](https://www.linkedin.com/in/christianah-adesua-baa6a734a)
-- Email: christianahadesua@gmail.com
-
-I am open to entry-level data analyst roles and internships, and happy to talk about this project in detail.
 
