@@ -63,7 +63,7 @@ A logistics company needs to know whether its trucks are earning money, deliveri
 
 Revenue, loads, trips, miles, on-time delivery, revenue trend, loads by load type, revenue by booking type, and delivery performance.
 
-![Operations Overview](dashboard-pages/01_operations_overview.png)
+![Operations Overview](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/dashboard-pages/01_operations_overview.png.png)
 
 ### 2. Fleet & Driver Performance
 *How are the trucks and drivers performing?*
