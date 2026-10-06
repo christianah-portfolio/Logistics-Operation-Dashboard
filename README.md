@@ -2,7 +2,7 @@
 
 **A four-page Power BI report that shows how a trucking company performs on deliveries, fleet, costs, and safety, and where it loses time and money.**
 
-![Operations Overview](dashboard-pages/01_operations_overview.png)
+![Operations Overview](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/dashboard-pages/01_operations_overview.png.png)
 
 > **Note:** This is a portfolio project. It uses a practice dataset and does not represent a real company.
 
