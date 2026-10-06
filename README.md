@@ -1,4 +1,4 @@
-# Logistics Operations Performance Dashboard
+# Logistics_Operations_Analytics
 
 **A four-page Power BI report that shows how a trucking company performs on deliveries, fleet, costs, and safety, and where it loses time and money.**
 
@@ -182,7 +182,7 @@ Checking the dashboards against the source data caught several problems:
 ## Project Files
 
 ```
-logistics-operations-dashboard/
+Logistics-Operations-Analytics/
 ├── README.md
 ├── dashboard/
 │   └── Logistics_Operations_Dashboard.pbix
