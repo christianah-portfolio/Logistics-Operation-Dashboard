@@ -4,8 +4,6 @@
 
 ![Operations Overview](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/dashboard-pages/01_operations_overview.png.png)
 
-> **Note:** This is a portfolio project. It uses a practice dataset and does not represent a real company.
-
 ---
 
 ## Project Overview
