@@ -77,7 +77,7 @@ Truck and driver counts, average MPG, fleet by truck status, maintenance cost by
 
 Revenue against fuel cost, maintenance cost, claims, fuel cost per mile, revenue by origin state and load type, and claims by preventable status.
 
-![Revenue, Fuel and Cost Performance](dashboard-pages/03_revenue_fuel_cost.png)
+![Revenue, Fuel and Cost Performance](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/dashboard-pages/03_revenue_fuel_cost.png.png)
 
 ### 4. Safety & Delivery Performance
 *How safe and on time are the deliveries?*
