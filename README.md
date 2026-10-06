@@ -2,14 +2,16 @@
 
 **A four-page Power BI report that shows how a trucking company performs on deliveries, fleet, costs, and safety, and where it loses time and money.**
 
-![Operations Overview](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/Logistic%20Operation%20Overview%20Dashboard_pbi.png)
+![Operations Overview](dashboard-pages/01_operations_overview.png)
+
+> **Note:** This is a portfolio project. It uses a practice dataset and does not represent a real company.
 
 ---
 
 ## Project Overview
 
 **Brief Description**
-A four-page Power BI dashboard analysing a trucking company's deliveries, fleet, costs, and safety, built from a multi-table dataset of about 550,000 records.
+A four-page Power BI dashboard analysing a trucking company's deliveries, fleet, costs, and safety, built from a multi-table dataset of about 550,000 records (portfolio project).
 
 **Tools & Skills Used**
 Power BI, Power Query, DAX, Data Modelling, Data Cleaning, KPI Design, Data Validation, Data Storytelling.
@@ -61,27 +63,28 @@ A logistics company needs to know whether its trucks are earning money, deliveri
 
 Revenue, loads, trips, miles, on-time delivery, revenue trend, loads by load type, revenue by booking type, and delivery performance.
 
-![Operations Overview](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/Logistic%20Operation%20Overview%20Dashboard_pbi.png)
+![Operations Overview](dashboard-pages/01_operations_overview.png)
+
 ### 2. Fleet & Driver Performance
 *How are the trucks and drivers performing?*
 
-Truck and driver counts, average MPG, fleet utilization trend, fleet by truck status, maintenance cost by type, revenue by truck brand, and miles by month.
+Truck and driver counts, average MPG, fleet by truck status, maintenance cost by type, revenue by truck brand, and miles by month.
 
-![Fleet and Driver Performance](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/Fleet%20%26%20Driver%20Performance%20Dashboard_pbi.png)
+![Fleet and Driver Performance](dashboard-pages/02_fleet_driver_performance.png)
 
 ### 3. Revenue, Fuel & Cost Performance
 *Where does the money go?*
 
 Revenue against fuel cost, maintenance cost, claims, fuel cost per mile, revenue by origin state and load type, and claims by preventable status.
 
-![Revenue, Fuel and Cost Performance](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/Revenue%2C%20Fuel%20%26%20Cost%20Performance%20Dashboard_pbi.png)
+![Revenue, Fuel and Cost Performance](dashboard-pages/03_revenue_fuel_cost.png)
 
 ### 4. Safety & Delivery Performance
 *How safe and on time are the deliveries?*
 
 Total deliveries, safety and injury incidents, claims, on-time delivery trend, claims and incidents by type, preventable vs non-preventable incidents, and top states by safety incidents.
 
-![Safety and Delivery Performance](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/Safety%20%26%20Delivery%20Performance%20Dashboard_pbi.png)
+![Safety and Delivery Performance](dashboard-pages/04_safety_delivery.png)
 
 ---
 
@@ -185,7 +188,7 @@ logistics-operations-dashboard/
 ├── README.md
 ├── dashboard/
 │   └── Logistics_Operations_Dashboard.pbix
-├── images/
+├── dashboard-pages/
 │   ├── 01_operations_overview.png
 │   ├── 02_fleet_driver_performance.png
 │   ├── 03_revenue_fuel_cost.png
@@ -193,5 +196,3 @@ logistics-operations-dashboard/
 └── data/
     └── data_dictionary.md
 ```
-
-
