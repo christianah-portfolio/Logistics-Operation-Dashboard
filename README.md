@@ -84,7 +84,7 @@ Revenue against fuel cost, maintenance cost, claims, fuel cost per mile, revenue
 
 Total deliveries, safety and injury incidents, claims, on-time delivery trend, claims and incidents by type, preventable vs non-preventable incidents, and top states by safety incidents.
 
-![Safety and Delivery Performance](dashboard-pages/04_safety_delivery.png)
+![Safety and Delivery Performance](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/dashboard-pages/04_safety_delivery.png.png)
 
 ---
 
