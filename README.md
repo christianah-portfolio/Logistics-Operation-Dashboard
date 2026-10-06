@@ -70,7 +70,7 @@ Revenue, loads, trips, miles, on-time delivery, revenue trend, loads by load typ
 
 Truck and driver counts, average MPG, fleet by truck status, maintenance cost by type, revenue by truck brand, and miles by month.
 
-![Fleet and Driver Performance](dashboard-pages/02_fleet_driver_performance.png)
+![Fleet and Driver Performance](https://github.com/christianah-portfolio/Logistics-Operation-Dashboard/blob/main/dashboard-pages/02_fleet_driver_performance.png.png)
 
 ### 3. Revenue, Fuel & Cost Performance
 *Where does the money go?*
