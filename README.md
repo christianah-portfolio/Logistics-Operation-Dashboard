@@ -9,7 +9,7 @@
 ## Project Overview
 
 **Brief Description**
-A four-page Power BI dashboard analysing a trucking company's deliveries, fleet, costs, and safety, built from a multi-table dataset of about 550,000 records (portfolio project).
+A four-page Power BI dashboard analysing a trucking company's deliveries, fleet, costs, and safety, built from a multi-table dataset of about 550,000 records.
 
 **Tools & Skills Used**
 Power BI, Power Query, DAX, Data Modelling, Data Cleaning, KPI Design, Data Validation, Data Storytelling.
@@ -173,7 +173,6 @@ Checking the dashboards against the source data caught several problems:
 
 ## Limitations
 
-- This is a training dataset, so findings should not be treated as conclusions about a real business.
 - The data shows that late deliveries are spread evenly, but it does not contain the causes (traffic, weather, scheduling).
 - About 1,700 trips have no driver assigned and about 1,700 have no truck assigned, so driver and truck views do not cover every trip.
 
